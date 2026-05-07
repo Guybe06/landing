@@ -7,26 +7,16 @@ const activeSection = ref<string>()
 
 const items = computed(() => [
   {
-    label: 'Fonctionnalites',
+    label: 'Features',
     to: '#features',
     exactHash: true,
     active: activeSection.value === 'features'
   },
   {
-    label: 'Tarifs',
+    label: 'Metrics',
     to: '#metrics',
     exactHash: true,
     active: activeSection.value === 'metrics'
-  },
-  {
-    label: 'Roadmap',
-    to: '#',
-    exactHash: true
-  },
-  {
-    label: 'Communaute',
-    to: '#',
-    exactHash: true
   }
 ])
 
@@ -71,6 +61,8 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
       <NuxtLink to="/">
         <AppLogo class="h-6 w-auto shrink-0" />
       </NuxtLink>
+
+      <TemplateMenu />
     </template>
 
     <UNavigationMenu
@@ -80,16 +72,17 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
 
     <template #right>
       <UButton
-        label="Connexion"
+        label="Sign in"
         color="neutral"
         variant="ghost"
         class="hidden lg:flex"
       />
       <UButton
-        label="Commencer"
-        color="primary"
+        label="Get started"
+        color="neutral"
         class="hidden lg:flex"
-        to="#"
+        to="https://ui.nuxt.com"
+        target="_blank"
       />
     </template>
 
@@ -99,7 +92,7 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
         variant="ghost"
         color="neutral"
         square
-        :aria-label="open ? 'Fermer la navigation' : 'Ouvrir la navigation'"
+        :aria-label="open ? 'Close navigation' : 'Open navigation'"
         :aria-expanded="open"
         :class="ui.toggle({ toggleSide: 'right' })"
         @click="toggle"
@@ -156,16 +149,16 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
 
       <div class="mt-4 flex flex-col gap-2">
         <UButton
-          label="Connexion"
+          label="Sign in"
           color="neutral"
           variant="soft"
           block
         />
         <UButton
-          label="Commencer"
-          color="primary"
+          label="Get started"
           block
-          to="#"
+          to="https://ui.nuxt.com"
+          target="_blank"
         />
       </div>
     </template>

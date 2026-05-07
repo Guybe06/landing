@@ -7,31 +7,17 @@
   --font-sans: 'Instrument Sans', -apple-system, sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
 
-  /* Skema Teal - Primary color from logo */
-  --color-teal-50: #f0fdfa;
-  --color-teal-100: #ccfbf1;
-  --color-teal-200: #99f6e4;
-  --color-teal-300: #5eead4;
-  --color-teal-400: #2dd4bf;
-  --color-teal-500: #309e93;
-  --color-teal-600: #237e74;
-  --color-teal-700: #1e5d5f;
-  --color-teal-800: #134e4a;
-  --color-teal-900: #064642;
-  --color-teal-950: #042f2e;
-
-  /* Skema Orange - Accent color from logo */
-  --color-orange-50: #fff7ed;
-  --color-orange-100: #ffedd5;
-  --color-orange-200: #fed7aa;
-  --color-orange-300: #fdba74;
-  --color-orange-400: #ee8d43;
-  --color-orange-500: #e27930;
-  --color-orange-600: #d16023;
-  --color-orange-700: #c2410c;
-  --color-orange-800: #9a3412;
-  --color-orange-900: #7c2d12;
-  --color-orange-950: #431407;
+  --color-lime-50: #fbfde8;
+  --color-lime-100: #f5fbb3;
+  --color-lime-200: #eef87e;
+  --color-lime-300: #ddf34c;
+  --color-lime-400: #c8f031;
+  --color-lime-500: #a9d316;
+  --color-lime-600: #84a70e;
+  --color-lime-700: #647f11;
+  --color-lime-800: #4f6413;
+  --color-lime-900: #435514;
+  --color-lime-950: #232f06;
 
   --animate-shimmer: shimmer 8s ease-in-out infinite alternate;
 

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const links = [
-  { label: 'Documentation', to: '#' },
-  { label: 'Tarifs', to: '#' },
-  { label: 'Roadmap', to: '#' },
-  { label: 'Communaute', to: '#' },
-  { label: 'Confidentialite', to: '#' }
+  { label: 'Docs', to: 'https://ui.nuxt.com', target: '_blank' },
+  { label: 'GitHub', to: 'https://github.com/nuxt/ui', target: '_blank' },
+  { label: 'Twitter', to: 'https://twitter.com/nuxt_js', target: '_blank' },
+  { label: 'Status', to: '#' },
+  { label: 'Privacy', to: '#' }
 ]
 </script>
 
@@ -17,7 +17,7 @@ const links = [
   >
     <template #left>
       <p class="text-sm text-dimmed">
-        &copy; {{ new Date().getFullYear() }} Skema. Developpe par Winsa Ltd
+        Built with Nuxt UI • © {{ new Date().getFullYear() }}
       </p>
     </template>
 
